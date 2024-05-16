@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: #9873fe;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.clock {
+  width: 31.25em;
+  height: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.clock div {
+  position: relative;
+  background-color: #ffffff;
+  height: 100%;
+  width: 3.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color: #150c41;
+  border-radius: 0.4em;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.05em;
+}
+.clock span {
+  font-weight: 800;
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 25em;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 2em;
+  border-radius: 0.8em;
+  margin-top: 5em;
+  margin-bottom: 10em;
+
+}
+
+.app-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app-icon {
+  width: 9.37em;
+}
+
+.app-title {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+}
+
+input#amount {
+  font-weight: 400;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #02002c;
+  color: #7a789d;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+
+input#amount:focus {
+  color: #9873fe;
+  border-color: #9873fe;
+}
+
+#from-currency-select, #to-currency-select {
+  text-align: center;
+}
+
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+select {
+  width: 100%;
+  padding: 0.6em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%, center;
+  background-size: 20px 20px;
+  background-color: #9873fe;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+select option {
+  background-color: #ffffff;
+  color: #02002c;
+}
+
+button {
+  font-size: 1em;
+  width: 100%;
+  background-color: #9873fe;
+  padding: 1em 0;
+  margin-top: 2em;
+  border-radius: 0.3em;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 1em;
+  color: #02002c;
+  background-color: #e5dbff;
+  padding: 0.8em 0;
+}

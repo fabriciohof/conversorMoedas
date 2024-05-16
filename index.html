@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="shortcut icon" href="assets/exchanging.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript/api-key.js" defer></script>
+    <script src="javascript/clock.js" defer></script>
+    <script src="javascript/currency-codes.js" defer></script>
+    <script src="javascript/script.js" defer></script>
+
+    <!-- <a href="https://www.flaticon.com/free-icons/money-exchange" title="money exchange icons">Money exchange icons created by justicon - Flaticon</a> -->
+
+    <!-- <a href="https://www.flaticon.com/free-icons/currency-exchange" title="currency exchange icons">Currency exchange icons created by Freepik - Flaticon</a> -->
+
+  </head>
+  <body>
+    <header>
+      <div class="clock">
+        <div id="hour"></div>
+        <span>:</span>
+        <div id="minute"></div>
+        <span>:</span>
+        <div id="seconds"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="app-details">
+          <img src="assets/currency-exchange.png" class="app-icon" />
+          <h1 class="app-title">Conversor de Moedas</h1>
+        </div>
+        <label for="amount">Valor:</label>
+        <input type="number" id="amount" value="1" />
+        <div class="dropdowns">
+          <select id="from-currency-select"></select>
+          <select id="to-currency-select"></select>
+        </div>
+        <button id="convert-button">Converter</button>
+        <p id="result"></p>
+      </div>
+    </main>
+
+  </body>
+</html>
